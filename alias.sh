@@ -3,7 +3,6 @@
 # Step 1: Define your aliases
 aliases=(
     "alias grep='grep --color=auto'"
-    "alias //='cd/'"
     "alias ..='cd ..'"
     "alias ...='cd ../../../'"
     "alias ll='ls -la'"
