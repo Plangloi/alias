@@ -54,6 +54,8 @@ fi
 # Step 5: Tell the user to reload their terminal
 echo "Please reload your terminal or run 'source ~/.bashrc' to apply the changes."
 
+echo $aliases
+
 
 
 
