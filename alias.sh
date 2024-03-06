@@ -28,6 +28,8 @@ aliases=(
     "alias df='df -H'"
     "alias du='du -ch'"
     "alias http='python3 -m http.server 8080'"
+    "alias me='hostname -I'"
+    
     
 )
 
