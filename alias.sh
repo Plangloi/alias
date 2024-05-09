@@ -3,7 +3,7 @@
 # Step 1: Define your aliases
 aliases=(
 ## Colorize the grep command output for ease of use (good for log files)##
-    "alias grep='grep --color=auto'"
+    "alias grep='grep --color=auto'
     "alias ..='cd ..'"
     "alias ...='cd ../../../'"
     "alias ll='ls -la'"
