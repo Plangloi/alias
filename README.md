@@ -1,5 +1,5 @@
 ##Run
 
 ```
-bash -c "$(wget -LO - https://github.com/Plangloi/alias/blob/main/alias.sh)"
+wget https://raw.githubusercontent.com/Plangloi/alias/main/alias.sh -O alias.sh && bash alias.sh
 ```
