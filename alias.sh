@@ -47,7 +47,7 @@ aliases=(
 
         "alias du='du -ch' # Display disk usage with human-readable units and a grand total"
 
-        "alias http='python3 -m http.server 8080' # Start a simple HTTP server on port 8080"
+        "alias http_S='python3 -m http.server 8080' # Start a simple HTTP server on port 8080"
 
         "alias me='hostname -I' # Display the IP address of the current host"
 )
