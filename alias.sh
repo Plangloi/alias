@@ -1,34 +1,23 @@
 #!/bin/bash
-# Author: ipatmbp4
-# Date: 2019-03-18
-# Description: Alias for bash
 
-aliases() {
-	alias_grep='grep --color=auto'
-	alias_cd_up='cd ..'
-	alias_cd_up_up='cd ../..'
-	alias_ll='ls -la'
-	alias_cd_up_again='cd ..'
-	alias_mkdir='mkdir -pv'
-	alias_vi='vim'
-	alias_sudo_vi='sudo vi'
-	alias_edit='vim'
-	alias_nvim='nvim'
-	alias_ping='ping -c 6'
-	alias_ports='netstat -tulanp'
-	alias_apt_get='sudo apt-get'
-	alias_apt_get_yes='sudo apt-get --yes'
-	alias_update='sudo apt-get update && sudo apt-get upgrade'
-	alias_reboot='sudo /sbin/reboot'
-	alias_poweroff='sudo /sbin/poweroff'
-	alias_halt='sudo /sbin/halt'
-	alias_shutdown='sudo /sbin/shutdown'
-	alias_cpuinfo='lscpu'
-	alias_df='df -H'
-	alias_du='du -ch'
-	alias_http='python3 -m http.server 8080'
-	alias_me='hostname -I'
-}
+# Step 1: Define your aliases
+aliases=(
+	"alias ll='ls -alF'"
+	"alias grep='grep --color=auto'"
+	"alias ..='cd ..'"
+	"alias ...='cd ../../../'"
+	"alias ll='ls -la'"
+	"alias cd..='cd ..'"
+	"alias mkdir='mkdir -pv'"
+	"alias vi='vim'"
+	"alias svi='sudo vi'"
+	"alias edit='vim'"
+	"alias nv='nvim'"
+	"alias ping='ping -c 6'"
+	"alias ports='netstat -tulanp'"
+	"alias ports='netstat -tulanp'"
+
+)
 
 # Check if .bashrc file exists
 if [ -f ~/.bashrc ]; then
@@ -51,8 +40,3 @@ else
 
 	echo "New .bashrc file created with aliases."
 fi
-
-# Step 5: Tell the user to reload their terminal
-echo "Please reload your terminal or run 'source ~/.bashrc' to apply the changes."
-
-echo "$aliases"
