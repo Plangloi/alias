@@ -3,53 +3,53 @@
 # Step 1: Define your aliases
 aliases=(
 
-alias grep='grep --color=auto' # Search for a pattern inside a file (with color highlighting)
+        "alias grep='grep --color=auto' # Search for a pattern inside a file (with color highlighting)"
 
-alias cd_up='cd ..' # Navigate up one directory level
+        "alias cd_up='cd ..' # Navigate up one directory level"
 
-alias cd_up_up='cd ../..' # Navigate up two directory levels
+        "alias cd_up_up='cd ../..' # Navigate up two directory levels"
 
-alias ll='ls -la' # List all files and directories (including hidden ones) with detailed information
+        "alias ll='ls -la' # List all files and directories (including hidden ones) with detailed information"
 
-alias cd_up_again='cd ..' # Navigate up one directory level (duplicate of alias_cd_up)
+        "alias cd_up_again='cd ..' # Navigate up one directory level (duplicate of alias_cd_up)"
 
-alias mkdir='mkdir -pv' # Create a directory and any necessary parent directories, with verbose output
+        "alias mkdir='mkdir -pv' # Create a directory and any necessary parent directories, with verbose output"
 
-alias vi='vim' # Open the Vim text editor
+        "alias vi='vim' # Open the Vim text editor"
 
-alias sudo_vi='sudo vi' # Open the Vim text editor with superuser privileges
+        "alias sudo_vi='sudo vi' # Open the Vim text editor with superuser privileges"
 
-alias edit='vim' # Open the Vim text editor (duplicate of alias_vi)
+        "alias edit='vim' # Open the Vim text editor (duplicate of alias_vi)"
 
-alias nvim='nvim' # Open the Neovim text editor
+        "alias nvim='nvim' # Open the Neovim text editor"
 
-alias ping='ping -c 6' # Ping a host with a limit of 6 packets
+        "alias ping='ping -c 6' # Ping a host with a limit of 6 packets"
 
-alias ports='netstat -tulanp' # List all listening ports and associated processes
+        "alias ports='netstat -tulanp' # List all listening ports and associated processes"
 
-alias apt_get='sudo apt-get' # Run the apt-get command with superuser privileges
+        "alias apt_get='sudo apt-get' # Run the apt-get command with superuser privileges"
 
-alias apt_get_yes='sudo apt-get --yes' # Run the apt-get command with superuser privileges and automatically answer "yes" to prompts
+        "alias apt_get_yes='sudo apt-get --yes' # Run the apt-get command with superuser privileges and automatically answer "yes" to prompts"
 
-alias update='sudo apt-get update && sudo apt-get upgrade' # Update package lists and upgrade installed packages
+        "alias update='sudo apt-get update && sudo apt-get upgrade' # Update package lists and upgrade installed packages"
 
-alias reboot='sudo /sbin/reboot' # Reboot the system with superuser privileges
+        "alias reboot='sudo /sbin/reboot' # Reboot the system with superuser privileges"
 
-alias poweroff='sudo /sbin/poweroff' # Power off the system with superuser privileges
+        "alias poweroff='sudo /sbin/poweroff' # Power off the system with superuser privileges"
 
-alias halt='sudo /sbin/halt' # Halt the system with superuser privileges
+        "alias halt='sudo /sbin/halt' # Halt the system with superuser privileges"
 
-alias shutdown='sudo /sbin/shutdown' # Shutdown the system with superuser privileges
+        "alias shutdown='sudo /sbin/shutdown' # Shutdown the system with superuser privileges"
 
-alias cpuinfo='lscpu' # Display CPU information
+        "alias cpuinfo='lscpu' # Display CPU information"
 
-alias df='df -H' # Display disk usage with human-readable units
+        "alias df='df -H' # Display disk usage with human-readable units"
 
-alias du='du -ch' # Display disk usage with human-readable units and a grand total
+        "alias du='du -ch' # Display disk usage with human-readable units and a grand total"
 
-alias http='python3 -m http.server 8080' # Start a simple HTTP server on port 8080
+        "alias http='python3 -m http.server 8080' # Start a simple HTTP server on port 8080"
 
-alias me='hostname -I' # Display the IP address of the current host
+        "alias me='hostname -I' # Display the IP address of the current host"
 )
 
 # Check if .bashrc file exists
