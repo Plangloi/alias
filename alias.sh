@@ -5,10 +5,6 @@ aliases=(
 
         "alias grep='grep --color=auto' # Search for a pattern inside a file (with color highlighting)"
 
-        "alias cd_up='cd ..' # Navigate up one directory level"
-
-        "alias cd_up_up='cd ../..' # Navigate up two directory levels"
-
         "alias ll='ls -la' # List all files and directories (including hidden ones) with detailed information"
 
         "alias cd_up_again='cd ..' # Navigate up one directory level (duplicate of alias_cd_up)"
@@ -21,7 +17,7 @@ aliases=(
 
         "alias edit='vim' # Open the Vim text editor (duplicate of alias_vi)"
 
-        "alias nvim='nvim' # Open the Neovim text editor"
+        "alias nv='nvim' # Open the Neovim text editor"
 
         "alias ping='ping -c 6' # Ping a host with a limit of 6 packets"
 
