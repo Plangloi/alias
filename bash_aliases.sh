@@ -49,25 +49,23 @@ aliases=(
 )
 
 # Check if .bashrc file exists
-if [ -f ~/.bashrc ]; then
-	echo ".bashrc file found. Adding aliases..."
-  cp ~/.bashrc ~/.bashrc.bk
-  echo "copy of bashrc done .bashrc.bk"
-
-	# Step 3 & 4: Append aliases to .bashrc
+if [ -f ~/.bash_aliases ]; then
+	echo ".bash_aliases file found. Adding aliases..."
+  
+	# Step 3 & 4: Append aliases to .bash_aliases
 	for alias_cmd in "${aliases[@]}"; do
-		echo "$alias_cmd" >>~/.bashrc
+		echo "$alias_cmd" >>~/.bash_aliases
 	done
 
 	echo "Aliases added to .bashrc."
 else
-	echo ".bashrc file not found. Creating a new one..."
+	echo ".bash_aliases file not found. Creating a new one..."
 
 	# Step 3 & 4: Create a new .bashrc file and add aliases
-	touch ~/.bashrc
+	touch ~/.bash_aliases
 	for alias_cmd in "${aliases[@]}"; do
-		echo "$alias_cmd" >>~/.bashrc
+		echo "$alias_cmd" >>~/.bash_aliases
 	done
 
-	echo "New .bashrc file created with aliases."
+	echo "New .bash_aliases file created with aliases."
 fi
