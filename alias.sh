@@ -51,6 +51,8 @@ aliases=(
 # Check if .bashrc file exists
 if [ -f ~/.bashrc ]; then
 	echo ".bashrc file found. Adding aliases..."
+ 	cp ~/.bashrc ~/.bashrc.bk
+  	echo "copy of bashrc done .bashrc.bk"
 
 	# Step 3 & 4: Append aliases to .bashrc
 	for alias_cmd in "${aliases[@]}"; do
