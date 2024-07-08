@@ -73,3 +73,6 @@ else
 
 	echo "New .bashrc file created with aliases."
 fi
+
+source ~/.bashrc
+echo "source updated!....."
